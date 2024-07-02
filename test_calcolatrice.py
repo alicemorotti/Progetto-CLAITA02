@@ -16,10 +16,14 @@ def test_divisione():
 
 # Aggiungi le funzioni per testare moltiplicazione e sottrazione
 def test_sottrazione():
-    pass
+    assert calcolatrice.sottrazione(68,33) == 35, "la funzione sottrazione(68,33) non ha prodotto 35!"
+    assert calcolatrice.sottrazione(20,20) != 2, "la funzione sottrazione(20,20) non ha prodotto 0!"
+    
+
 
 def test_moltiplicazione():
-    pass
+    assert calcolatrice.moltiplicazione(3,9) == 27
+    assert calcolatrice.moltiplicazione(-5,2) <0 
 
 # Aggiungi una funzione per testare magicNumbers
 def test_magicNumbers():
