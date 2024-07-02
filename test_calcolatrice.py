@@ -23,7 +23,7 @@ def test_moltiplicazione():
 
 # Aggiungi una funzione per testare magicNumbers
 def test_magicNumbers():
-    pass
+    assert 25 in calcolatrice.magicNumbers(24, 55)
 # bonus: prevedi di usare l'operatore in nell'assert
 # def funzioneCheRestituisceUnaLista(a) -> list:
 #     return [a]
