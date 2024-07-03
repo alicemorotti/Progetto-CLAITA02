@@ -14,3 +14,15 @@ def test_Poligono():
     assert isinstance(p1,cG.Poligono)
     # NB: ricorda che puoi verificare con un assert il tipo di un oggetto con la funzione isinstance(nomeOggetto, tipo)
     
+def test_Triangolo():
+    # 1. Creo un oggetto di tipo Triangolo
+    p1= cG.Triangolo(3, 3, 3, 60, 60, 60)
+
+    # 2. Testo le sue funzionalità (i suoi metodi, i suoi attributi, i suoi metodi dunder, ed il suo tipo)
+    assert p1.calcolaPerimetro() == 9 
+    assert p1.sommaAngoli() <200
+
+    assert isinstance(p1.lati, list)
+    assert isinstance(p1.sommaAngoli, int)
+    assert isinstance(p1,cG.Triangolo)
+    # NB: ricorda che puoi verificare con un assert il tipo di un oggetto con la funzione isinstance(nomeOggetto, tipo)
